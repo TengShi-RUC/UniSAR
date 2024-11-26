@@ -1,0 +1,399 @@
+2024-11-25 22:06:22,993 - batch_size: 1024
+2024-11-25 22:06:22,993 - data: KuaiSAR
+2024-11-25 22:06:22,993 - device: cuda
+2024-11-25 22:06:22,993 - dropout: 0.1
+2024-11-25 22:06:22,993 - early_stop: 5
+2024-11-25 22:06:22,993 - epoch: 100
+2024-11-25 22:06:22,993 - eval_batch_size: 512
+2024-11-25 22:06:22,993 - gpu: 1
+2024-11-25 22:06:22,993 - his_cl_temp: 0.1
+2024-11-25 22:06:22,993 - his_cl_weight: 0.1
+2024-11-25 22:06:22,993 - infoNCE_neg_sample: 1024
+2024-11-25 22:06:22,993 - l2: 3e-05
+2024-11-25 22:06:22,993 - lr: 0.001
+2024-11-25 22:06:22,993 - min_lr: 1e-06
+2024-11-25 22:06:22,993 - model: UniSAR
+2024-11-25 22:06:22,993 - model_path: output/KuaiSAR/UniSAR/checkpoints/20241125-220622
+2024-11-25 22:06:22,993 - num_heads: 2
+2024-11-25 22:06:22,993 - num_layers: 1
+2024-11-25 22:06:22,993 - num_workers: 10
+2024-11-25 22:06:22,993 - patience: 3
+2024-11-25 22:06:22,993 - pred_hid_units: [200, 80, 1]
+2024-11-25 22:06:22,993 - q_i_cl_temp: 0.5
+2024-11-25 22:06:22,993 - q_i_cl_weight: 0.001
+2024-11-25 22:06:22,994 - random_seed: 20230601
+2024-11-25 22:06:22,994 - src_loss_weight: 0.1
+2024-11-25 22:06:22,994 - test_path:
+2024-11-25 22:06:22,994 - time: 20241125-220622
+2024-11-25 22:06:22,994 - train: 1
+2024-11-25 22:06:43,347 - src train batch size:88
+2024-11-25 22:06:43,348 - num model parameters:35599505
+2024-11-25 22:07:03,588 -  
+2024-11-25 22:07:03,588 - Epoch: 0
+2024-11-25 22:08:56,093 - epoch:0 step:500 time:107.77s |rec click_loss:0.4808 q_i_cl_loss:6.4309 his_cl_loss:13.6009 total_loss:1.8473| |src click_loss:0.4826 q_i_cl_loss:6.5229 his_cl_loss:8.7145 total_loss:1.3606|
+2024-11-25 22:10:28,021 - epoch:0 step:1000 time:199.70s |rec click_loss:0.4532 q_i_cl_loss:5.5826 his_cl_loss:10.3355 total_loss:1.4924| |src click_loss:0.4538 q_i_cl_loss:5.8086 his_cl_loss:6.3835 total_loss:1.0980|
+2024-11-25 22:11:59,184 - epoch:0 step:1500 time:290.87s |rec click_loss:0.4295 q_i_cl_loss:5.2221 his_cl_loss:7.1501 total_loss:1.1497| |src click_loss:0.4281 q_i_cl_loss:5.4895 his_cl_loss:4.3707 total_loss:0.8707|
+2024-11-25 22:13:32,416 - epoch:0 step:2000 time:384.10s |rec click_loss:0.4079 q_i_cl_loss:4.9361 his_cl_loss:5.4527 total_loss:0.9581| |src click_loss:0.4064 q_i_cl_loss:5.2397 his_cl_loss:3.3212 total_loss:0.7438|
+2024-11-25 22:15:03,886 - epoch:0 step:2500 time:475.57s |rec click_loss:0.3904 q_i_cl_loss:4.7047 his_cl_loss:4.4127 total_loss:0.8363| |src click_loss:0.3887 q_i_cl_loss:5.0386 his_cl_loss:2.6808 total_loss:0.6618|
+2024-11-25 22:16:32,734 - epoch:0 step:3000 time:564.41s |rec click_loss:0.3765 q_i_cl_loss:4.5179 his_cl_loss:3.7125 total_loss:0.7523| |src click_loss:0.3741 q_i_cl_loss:4.8761 his_cl_loss:2.2497 total_loss:0.6039|
+2024-11-25 22:17:49,359 - total time: 641.04s
+2024-11-25 22:17:49,361 - epoch:0 mean loss:0.7540
+2024-11-25 22:18:07,406 - model evaluate time used:18.04365110397339s
+2024-11-25 22:18:11,189 - model evaluate time used:3.609922170639038s
+2024-11-25 22:18:12,303 - Dev Result:
+2024-11-25 22:18:12,303 - {'rec': 'HR@1:0.1476,NDCG@1:0.1476,HR@5:0.4106,NDCG@5:0.2822,HR@10:0.5701,NDCG@10:0.3336,HR@20:0.7366,NDCG@20:0.3758,HR@50:0.9173,NDCG@50:0.4121', 'src': 'HR@1:0.3853,NDCG@1:0.3853,HR@5:0.5891,NDCG@5:0.4873,HR@10:0.7149,NDCG@10:0.5280,HR@20:0.8360,NDCG@20:0.5587,HR@50:0.9654,NDCG@50:0.5847'}
+2024-11-25 22:18:12,303 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-25 22:18:28,134 - model evaluate time used:15.41342043876648s
+2024-11-25 22:18:31,481 - model evaluate time used:3.261854410171509s
+2024-11-25 22:18:32,473 - Test Result:
+2024-11-25 22:18:32,473 - {'rec': 'HR@1:0.1248,NDCG@1:0.1248,HR@5:0.3584,NDCG@5:0.2441,HR@10:0.5127,NDCG@10:0.2938,HR@20:0.6849,NDCG@20:0.3373,HR@50:0.8892,NDCG@50:0.3783', 'src': 'HR@1:0.4084,NDCG@1:0.4084,HR@5:0.5940,NDCG@5:0.5011,HR@10:0.7231,NDCG@10:0.5428,HR@20:0.8457,NDCG@20:0.5738,HR@50:0.9635,NDCG@50:0.5975'}
+2024-11-25 22:18:37,442 -  
+2024-11-25 22:18:37,442 - Epoch: 1
+2024-11-25 22:20:24,623 - epoch:1 step:500 time:106.90s |rec click_loss:0.2786 q_i_cl_loss:3.2270 his_cl_loss:0.1523 total_loss:0.2971| |src click_loss:0.2501 q_i_cl_loss:3.8220 his_cl_loss:0.0655 total_loss:0.2604|
+2024-11-25 22:21:56,537 - epoch:1 step:1000 time:198.82s |rec click_loss:0.2804 q_i_cl_loss:3.1671 his_cl_loss:0.1493 total_loss:0.2985| |src click_loss:0.2525 q_i_cl_loss:3.7774 his_cl_loss:0.0637 total_loss:0.2627|
+2024-11-25 22:23:28,016 - epoch:1 step:1500 time:290.29s |rec click_loss:0.2802 q_i_cl_loss:3.1102 his_cl_loss:0.1467 total_loss:0.2979| |src click_loss:0.2536 q_i_cl_loss:3.7347 his_cl_loss:0.0614 total_loss:0.2635|
+2024-11-25 22:25:00,070 - epoch:1 step:2000 time:382.35s |rec click_loss:0.2791 q_i_cl_loss:3.0506 his_cl_loss:0.1426 total_loss:0.2965| |src click_loss:0.2532 q_i_cl_loss:3.6901 his_cl_loss:0.0600 total_loss:0.2629|
+2024-11-25 22:26:31,503 - epoch:1 step:2500 time:473.78s |rec click_loss:0.2779 q_i_cl_loss:2.9933 his_cl_loss:0.1394 total_loss:0.2948| |src click_loss:0.2528 q_i_cl_loss:3.6483 his_cl_loss:0.0586 total_loss:0.2623|
+2024-11-25 22:28:00,697 - epoch:1 step:3000 time:562.97s |rec click_loss:0.2764 q_i_cl_loss:2.9436 his_cl_loss:0.1358 total_loss:0.2929| |src click_loss:0.2517 q_i_cl_loss:3.6124 his_cl_loss:0.0569 total_loss:0.2610|
+2024-11-25 22:29:17,617 - total time: 639.90s
+2024-11-25 22:29:17,619 - epoch:1 mean loss:0.3173
+2024-11-25 22:29:33,520 - model evaluate time used:15.899635791778564s
+2024-11-25 22:29:35,018 - model evaluate time used:1.307771921157837s
+2024-11-25 22:29:36,203 - Dev Result:
+2024-11-25 22:29:36,203 - {'rec': 'HR@1:0.1760,NDCG@1:0.1760,HR@5:0.4664,NDCG@5:0.3254,HR@10:0.6289,NDCG@10:0.3780,HR@20:0.7900,NDCG@20:0.4188,HR@50:0.9476,NDCG@50:0.4505', 'src': 'HR@1:0.4144,NDCG@1:0.4144,HR@5:0.6473,NDCG@5:0.5332,HR@10:0.7611,NDCG@10:0.5701,HR@20:0.8662,NDCG@20:0.5967,HR@50:0.9708,NDCG@50:0.6179'}
+2024-11-25 22:29:36,203 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-25 22:29:50,206 - model evaluate time used:13.046470403671265s
+2024-11-25 22:29:51,281 - model evaluate time used:0.9343428611755371s
+2024-11-25 22:29:52,510 - Test Result:
+2024-11-25 22:29:52,511 - {'rec': 'HR@1:0.1484,NDCG@1:0.1484,HR@5:0.4157,NDCG@5:0.2850,HR@10:0.5811,NDCG@10:0.3383,HR@20:0.7535,NDCG@20:0.3820,HR@50:0.9304,NDCG@50:0.4176', 'src': 'HR@1:0.4286,NDCG@1:0.4286,HR@5:0.6503,NDCG@5:0.5426,HR@10:0.7690,NDCG@10:0.5810,HR@20:0.8754,NDCG@20:0.6081,HR@50:0.9728,NDCG@50:0.6278'}
+2024-11-25 22:29:58,682 -  
+2024-11-25 22:29:58,682 - Epoch: 2
+2024-11-25 22:31:45,473 - epoch:2 step:500 time:106.54s |rec click_loss:0.2418 q_i_cl_loss:2.4936 his_cl_loss:0.1017 total_loss:0.2544| |src click_loss:0.1950 q_i_cl_loss:3.3161 his_cl_loss:0.0436 total_loss:0.2026|
+2024-11-25 22:33:17,196 - epoch:2 step:1000 time:198.26s |rec click_loss:0.2466 q_i_cl_loss:2.4772 his_cl_loss:0.1014 total_loss:0.2592| |src click_loss:0.2036 q_i_cl_loss:3.3049 his_cl_loss:0.0433 total_loss:0.2112|
+2024-11-25 22:34:49,781 - epoch:2 step:1500 time:290.84s |rec click_loss:0.2494 q_i_cl_loss:2.4515 his_cl_loss:0.1015 total_loss:0.2620| |src click_loss:0.2100 q_i_cl_loss:3.2860 his_cl_loss:0.0430 total_loss:0.2176|
+2024-11-25 22:36:21,788 - epoch:2 step:2000 time:382.85s |rec click_loss:0.2508 q_i_cl_loss:2.4229 his_cl_loss:0.1009 total_loss:0.2633| |src click_loss:0.2143 q_i_cl_loss:3.2609 his_cl_loss:0.0419 total_loss:0.2218|
+2024-11-25 22:37:52,280 - epoch:2 step:2500 time:473.34s |rec click_loss:0.2515 q_i_cl_loss:2.3939 his_cl_loss:0.1003 total_loss:0.2640| |src click_loss:0.2174 q_i_cl_loss:3.2352 his_cl_loss:0.0410 total_loss:0.2247|
+2024-11-25 22:39:21,238 - epoch:2 step:3000 time:562.30s |rec click_loss:0.2520 q_i_cl_loss:2.3659 his_cl_loss:0.0993 total_loss:0.2643| |src click_loss:0.2193 q_i_cl_loss:3.2154 his_cl_loss:0.0400 total_loss:0.2265|
+2024-11-25 22:40:39,767 - total time: 640.83s
+2024-11-25 22:40:39,771 - epoch:2 mean loss:0.2872
+2024-11-25 22:40:55,355 - model evaluate time used:15.581752300262451s
+2024-11-25 22:40:56,789 - model evaluate time used:1.2626104354858398s
+2024-11-25 22:40:57,837 - Dev Result:
+2024-11-25 22:40:57,837 - {'rec': 'HR@1:0.1834,NDCG@1:0.1834,HR@5:0.4830,NDCG@5:0.3374,HR@10:0.6470,NDCG@10:0.3905,HR@20:0.8038,NDCG@20:0.4302,HR@50:0.9529,NDCG@50:0.4603', 'src': 'HR@1:0.4091,NDCG@1:0.4091,HR@5:0.6810,NDCG@5:0.5511,HR@10:0.7909,NDCG@10:0.5867,HR@20:0.8841,NDCG@20:0.6103,HR@50:0.9743,NDCG@50:0.6285'}
+2024-11-25 22:40:57,837 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-25 22:41:11,103 - model evaluate time used:12.464513063430786s
+2024-11-25 22:41:12,079 - model evaluate time used:0.8948624134063721s
+2024-11-25 22:41:12,941 - Test Result:
+2024-11-25 22:41:12,941 - {'rec': 'HR@1:0.1512,NDCG@1:0.1512,HR@5:0.4248,NDCG@5:0.2910,HR@10:0.5936,NDCG@10:0.3455,HR@20:0.7672,NDCG@20:0.3894,HR@50:0.9383,NDCG@50:0.4238', 'src': 'HR@1:0.4313,NDCG@1:0.4313,HR@5:0.6833,NDCG@5:0.5633,HR@10:0.7921,NDCG@10:0.5986,HR@20:0.8924,NDCG@20:0.6240,HR@50:0.9772,NDCG@50:0.6411'}
+2024-11-25 22:41:17,499 -  
+2024-11-25 22:41:17,499 - Epoch: 3
+2024-11-25 22:43:07,586 - epoch:3 step:500 time:109.84s |rec click_loss:0.2261 q_i_cl_loss:2.1187 his_cl_loss:0.0887 total_loss:0.2370| |src click_loss:0.1656 q_i_cl_loss:3.0426 his_cl_loss:0.0343 total_loss:0.1720|
+2024-11-25 22:44:35,996 - epoch:3 step:1000 time:198.25s |rec click_loss:0.2326 q_i_cl_loss:2.1319 his_cl_loss:0.0883 total_loss:0.2436| |src click_loss:0.1753 q_i_cl_loss:3.0566 his_cl_loss:0.0342 total_loss:0.1818|
+2024-11-25 22:46:05,784 - epoch:3 step:1500 time:288.04s |rec click_loss:0.2366 q_i_cl_loss:2.1352 his_cl_loss:0.0891 total_loss:0.2477| |src click_loss:0.1849 q_i_cl_loss:3.0557 his_cl_loss:0.0344 total_loss:0.1913|
+2024-11-25 22:47:34,803 - epoch:3 step:2000 time:377.05s |rec click_loss:0.2390 q_i_cl_loss:2.1307 his_cl_loss:0.0889 total_loss:0.2500| |src click_loss:0.1915 q_i_cl_loss:3.0479 his_cl_loss:0.0347 total_loss:0.1980|
+2024-11-25 22:49:03,998 - epoch:3 step:2500 time:466.25s |rec click_loss:0.2408 q_i_cl_loss:2.1223 his_cl_loss:0.0889 total_loss:0.2518| |src click_loss:0.1966 q_i_cl_loss:3.0409 his_cl_loss:0.0344 total_loss:0.2031|
+2024-11-25 22:50:30,416 - epoch:3 step:3000 time:552.67s |rec click_loss:0.2420 q_i_cl_loss:2.1179 his_cl_loss:0.0884 total_loss:0.2529| |src click_loss:0.2004 q_i_cl_loss:3.0336 his_cl_loss:0.0342 total_loss:0.2069|
+2024-11-25 22:51:44,721 - total time: 626.97s
+2024-11-25 22:51:44,724 - epoch:3 mean loss:0.2745
+2024-11-25 22:51:59,763 - model evaluate time used:15.038053750991821s
+2024-11-25 22:52:01,332 - model evaluate time used:1.2671737670898438s
+2024-11-25 22:52:02,492 - Dev Result:
+2024-11-25 22:52:02,492 - {'rec': 'HR@1:0.1815,NDCG@1:0.1815,HR@5:0.4775,NDCG@5:0.3337,HR@10:0.6416,NDCG@10:0.3868,HR@20:0.8003,NDCG@20:0.4270,HR@50:0.9534,NDCG@50:0.4578', 'src': 'HR@1:0.3714,NDCG@1:0.3714,HR@5:0.6822,NDCG@5:0.5369,HR@10:0.7939,NDCG@10:0.5730,HR@20:0.8865,NDCG@20:0.5964,HR@50:0.9753,NDCG@50:0.6144'}
+2024-11-25 22:52:06,145 -  
+2024-11-25 22:52:06,145 - Epoch: 4
+2024-11-25 22:53:47,211 - epoch:4 step:500 time:100.78s |rec click_loss:0.2184 q_i_cl_loss:2.0407 his_cl_loss:0.0832 total_loss:0.2288| |src click_loss:0.1506 q_i_cl_loss:2.9613 his_cl_loss:0.0321 total_loss:0.1568|
+2024-11-25 22:55:15,334 - epoch:4 step:1000 time:188.90s |rec click_loss:0.2254 q_i_cl_loss:2.0692 his_cl_loss:0.0840 total_loss:0.2358| |src click_loss:0.1612 q_i_cl_loss:2.9882 his_cl_loss:0.0315 total_loss:0.1673|
+2024-11-25 22:56:39,202 - epoch:4 step:1500 time:272.77s |rec click_loss:0.2301 q_i_cl_loss:2.0698 his_cl_loss:0.0836 total_loss:0.2405| |src click_loss:0.1704 q_i_cl_loss:2.9884 his_cl_loss:0.0315 total_loss:0.1766|
+2024-11-25 22:58:04,342 - epoch:4 step:2000 time:357.91s |rec click_loss:0.2331 q_i_cl_loss:2.0637 his_cl_loss:0.0830 total_loss:0.2435| |src click_loss:0.1782 q_i_cl_loss:2.9828 his_cl_loss:0.0310 total_loss:0.1843|
+2024-11-25 22:59:26,969 - epoch:4 step:2500 time:440.54s |rec click_loss:0.2353 q_i_cl_loss:2.0595 his_cl_loss:0.0833 total_loss:0.2457| |src click_loss:0.1842 q_i_cl_loss:2.9741 his_cl_loss:0.0308 total_loss:0.1903|
+2024-11-25 23:00:48,550 - epoch:4 step:3000 time:522.12s |rec click_loss:0.2368 q_i_cl_loss:2.0579 his_cl_loss:0.0828 total_loss:0.2471| |src click_loss:0.1889 q_i_cl_loss:2.9693 his_cl_loss:0.0305 total_loss:0.1950|
+2024-11-25 23:01:59,538 - total time: 593.11s
+2024-11-25 23:01:59,540 - epoch:4 mean loss:0.2679
+2024-11-25 23:02:14,014 - model evaluate time used:14.472811222076416s
+2024-11-25 23:02:15,331 - model evaluate time used:1.2297146320343018s
+2024-11-25 23:02:16,021 - Dev Result:
+2024-11-25 23:02:16,021 - {'rec': 'HR@1:0.1816,NDCG@1:0.1816,HR@5:0.4752,NDCG@5:0.3324,HR@10:0.6401,NDCG@10:0.3858,HR@20:0.7998,NDCG@20:0.4263,HR@50:0.9546,NDCG@50:0.4575', 'src': 'HR@1:0.4266,NDCG@1:0.4266,HR@5:0.6941,NDCG@5:0.5668,HR@10:0.7996,NDCG@10:0.6010,HR@20:0.8891,NDCG@20:0.6237,HR@50:0.9749,NDCG@50:0.6410'}
+2024-11-25 23:02:16,021 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-25 23:02:29,198 - model evaluate time used:12.010751008987427s
+2024-11-25 23:02:30,130 - model evaluate time used:0.8611106872558594s
+2024-11-25 23:02:30,690 - Test Result:
+2024-11-25 23:02:30,690 - {'rec': 'HR@1:0.1556,NDCG@1:0.1556,HR@5:0.4287,NDCG@5:0.2951,HR@10:0.5993,NDCG@10:0.3502,HR@20:0.7710,NDCG@20:0.3937,HR@50:0.9439,NDCG@50:0.4285', 'src': 'HR@1:0.4341,NDCG@1:0.4341,HR@5:0.6940,NDCG@5:0.5702,HR@10:0.7976,NDCG@10:0.6038,HR@20:0.8904,NDCG@20:0.6273,HR@50:0.9760,NDCG@50:0.6447'}
+2024-11-25 23:02:35,679 -  
+2024-11-25 23:02:35,679 - Epoch: 5
+2024-11-25 23:04:12,567 - epoch:5 step:500 time:96.66s |rec click_loss:0.2134 q_i_cl_loss:2.0226 his_cl_loss:0.0782 total_loss:0.2232| |src click_loss:0.1383 q_i_cl_loss:2.9269 his_cl_loss:0.0267 total_loss:0.1439|
+2024-11-25 23:05:39,607 - epoch:5 step:1000 time:183.69s |rec click_loss:0.2214 q_i_cl_loss:2.0531 his_cl_loss:0.0801 total_loss:0.2315| |src click_loss:0.1493 q_i_cl_loss:2.9491 his_cl_loss:0.0288 total_loss:0.1551|
+2024-11-25 23:07:04,591 - epoch:5 step:1500 time:268.68s |rec click_loss:0.2264 q_i_cl_loss:2.0606 his_cl_loss:0.0796 total_loss:0.2364| |src click_loss:0.1593 q_i_cl_loss:2.9558 his_cl_loss:0.0297 total_loss:0.1653|
+2024-11-25 23:08:28,423 - epoch:5 step:2000 time:352.51s |rec click_loss:0.2297 q_i_cl_loss:2.0687 his_cl_loss:0.0795 total_loss:0.2398| |src click_loss:0.1681 q_i_cl_loss:2.9574 his_cl_loss:0.0292 total_loss:0.1740|
+2024-11-25 23:09:51,005 - epoch:5 step:2500 time:435.09s |rec click_loss:0.2320 q_i_cl_loss:2.0685 his_cl_loss:0.0794 total_loss:0.2420| |src click_loss:0.1749 q_i_cl_loss:2.9546 his_cl_loss:0.0293 total_loss:0.1808|
+2024-11-25 23:11:11,900 - epoch:5 step:3000 time:515.99s |rec click_loss:0.2337 q_i_cl_loss:2.0701 his_cl_loss:0.0791 total_loss:0.2437| |src click_loss:0.1803 q_i_cl_loss:2.9511 his_cl_loss:0.0290 total_loss:0.1862|
+2024-11-25 23:12:22,294 - total time: 586.39s
+2024-11-25 23:12:22,296 - epoch:5 mean loss:0.2638
+2024-11-25 23:12:36,937 - model evaluate time used:14.639435052871704s
+2024-11-25 23:12:38,246 - model evaluate time used:1.2185659408569336s
+2024-11-25 23:12:38,941 - Dev Result:
+2024-11-25 23:12:38,941 - {'rec': 'HR@1:0.1909,NDCG@1:0.1909,HR@5:0.4882,NDCG@5:0.3442,HR@10:0.6497,NDCG@10:0.3964,HR@20:0.8049,NDCG@20:0.4358,HR@50:0.9537,NDCG@50:0.4657', 'src': 'HR@1:0.3990,NDCG@1:0.3990,HR@5:0.6969,NDCG@5:0.5565,HR@10:0.8026,NDCG@10:0.5908,HR@20:0.8936,NDCG@20:0.6138,HR@50:0.9748,NDCG@50:0.6302'}
+2024-11-25 23:12:38,942 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-25 23:12:51,991 - model evaluate time used:11.995558977127075s
+2024-11-25 23:12:52,959 - model evaluate time used:0.89847731590271s
+2024-11-25 23:12:53,520 - Test Result:
+2024-11-25 23:12:53,520 - {'rec': 'HR@1:0.1641,NDCG@1:0.1641,HR@5:0.4440,NDCG@5:0.3072,HR@10:0.6133,NDCG@10:0.3619,HR@20:0.7804,NDCG@20:0.4042,HR@50:0.9462,NDCG@50:0.4376', 'src': 'HR@1:0.4063,NDCG@1:0.4063,HR@5:0.6969,NDCG@5:0.5609,HR@10:0.8056,NDCG@10:0.5962,HR@20:0.8985,NDCG@20:0.6198,HR@50:0.9796,NDCG@50:0.6361'}
+2024-11-25 23:13:01,055 -  
+2024-11-25 23:13:01,055 - Epoch: 6
+2024-11-25 23:14:40,842 - epoch:6 step:500 time:99.56s |rec click_loss:0.2108 q_i_cl_loss:2.0453 his_cl_loss:0.0755 total_loss:0.2204| |src click_loss:0.1321 q_i_cl_loss:2.9145 his_cl_loss:0.0289 total_loss:0.1379|
+2024-11-25 23:16:04,035 - epoch:6 step:1000 time:182.75s |rec click_loss:0.2187 q_i_cl_loss:2.0810 his_cl_loss:0.0765 total_loss:0.2285| |src click_loss:0.1421 q_i_cl_loss:2.9469 his_cl_loss:0.0277 total_loss:0.1478|
+2024-11-25 23:17:29,664 - epoch:6 step:1500 time:268.38s |rec click_loss:0.2237 q_i_cl_loss:2.0935 his_cl_loss:0.0769 total_loss:0.2335| |src click_loss:0.1527 q_i_cl_loss:2.9616 his_cl_loss:0.0282 total_loss:0.1585|
+2024-11-25 23:18:57,718 - epoch:6 step:2000 time:356.44s |rec click_loss:0.2273 q_i_cl_loss:2.0983 his_cl_loss:0.0778 total_loss:0.2372| |src click_loss:0.1615 q_i_cl_loss:2.9620 his_cl_loss:0.0280 total_loss:0.1673|
+2024-11-25 23:20:24,368 - epoch:6 step:2500 time:443.09s |rec click_loss:0.2298 q_i_cl_loss:2.0972 his_cl_loss:0.0777 total_loss:0.2397| |src click_loss:0.1684 q_i_cl_loss:2.9561 his_cl_loss:0.0282 total_loss:0.1742|
+2024-11-25 23:21:47,973 - epoch:6 step:3000 time:526.69s |rec click_loss:0.2316 q_i_cl_loss:2.1007 his_cl_loss:0.0781 total_loss:0.2415| |src click_loss:0.1741 q_i_cl_loss:2.9538 his_cl_loss:0.0282 total_loss:0.1799|
+2024-11-25 23:23:01,525 - total time: 600.25s
+2024-11-25 23:23:01,527 - epoch:6 mean loss:0.2611
+2024-11-25 23:23:15,956 - model evaluate time used:14.427704811096191s
+2024-11-25 23:23:17,253 - model evaluate time used:1.2049205303192139s
+2024-11-25 23:23:17,944 - Dev Result:
+2024-11-25 23:23:17,944 - {'rec': 'HR@1:0.1872,NDCG@1:0.1872,HR@5:0.4835,NDCG@5:0.3399,HR@10:0.6450,NDCG@10:0.3921,HR@20:0.7992,NDCG@20:0.4313,HR@50:0.9494,NDCG@50:0.4615', 'src': 'HR@1:0.4021,NDCG@1:0.4021,HR@5:0.7009,NDCG@5:0.5613,HR@10:0.8059,NDCG@10:0.5954,HR@20:0.8931,NDCG@20:0.6175,HR@50:0.9751,NDCG@50:0.6340'}
+2024-11-25 23:23:17,944 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-25 23:23:30,681 - model evaluate time used:11.868326902389526s
+2024-11-25 23:23:31,660 - model evaluate time used:0.9072229862213135s
+2024-11-25 23:23:32,218 - Test Result:
+2024-11-25 23:23:32,218 - {'rec': 'HR@1:0.1596,NDCG@1:0.1596,HR@5:0.4398,NDCG@5:0.3030,HR@10:0.6079,NDCG@10:0.3573,HR@20:0.7775,NDCG@20:0.4003,HR@50:0.9446,NDCG@50:0.4339', 'src': 'HR@1:0.4039,NDCG@1:0.4039,HR@5:0.7056,NDCG@5:0.5655,HR@10:0.8083,NDCG@10:0.5988,HR@20:0.8947,NDCG@20:0.6208,HR@50:0.9778,NDCG@50:0.6375'}
+2024-11-25 23:23:36,689 -  
+2024-11-25 23:23:36,689 - Epoch: 7
+2024-11-25 23:25:21,103 - epoch:7 step:500 time:104.21s |rec click_loss:0.2086 q_i_cl_loss:2.0626 his_cl_loss:0.0753 total_loss:0.2182| |src click_loss:0.1257 q_i_cl_loss:2.9106 his_cl_loss:0.0288 total_loss:0.1314|
+2024-11-25 23:26:44,780 - epoch:7 step:1000 time:187.88s |rec click_loss:0.2167 q_i_cl_loss:2.1011 his_cl_loss:0.0774 total_loss:0.2266| |src click_loss:0.1369 q_i_cl_loss:2.9415 his_cl_loss:0.0291 total_loss:0.1428|
+2024-11-25 23:28:08,667 - epoch:7 step:1500 time:271.77s |rec click_loss:0.2220 q_i_cl_loss:2.1028 his_cl_loss:0.0763 total_loss:0.2317| |src click_loss:0.1480 q_i_cl_loss:2.9498 his_cl_loss:0.0283 total_loss:0.1538|
+2024-11-25 23:29:31,785 - epoch:7 step:2000 time:354.89s |rec click_loss:0.2256 q_i_cl_loss:2.1016 his_cl_loss:0.0768 total_loss:0.2353| |src click_loss:0.1573 q_i_cl_loss:2.9508 his_cl_loss:0.0284 total_loss:0.1631|
+2024-11-25 23:30:57,467 - epoch:7 step:2500 time:440.57s |rec click_loss:0.2281 q_i_cl_loss:2.0982 his_cl_loss:0.0768 total_loss:0.2378| |src click_loss:0.1651 q_i_cl_loss:2.9453 his_cl_loss:0.0282 total_loss:0.1709|
+2024-11-25 23:32:22,348 - epoch:7 step:3000 time:525.45s |rec click_loss:0.2300 q_i_cl_loss:2.1015 his_cl_loss:0.0765 total_loss:0.2397| |src click_loss:0.1712 q_i_cl_loss:2.9438 his_cl_loss:0.0282 total_loss:0.1770|
+2024-11-25 23:33:34,300 - total time: 597.40s
+2024-11-25 23:33:34,301 - epoch:7 mean loss:0.2591
+2024-11-25 23:33:49,270 - model evaluate time used:14.967599153518677s
+2024-11-25 23:33:50,663 - model evaluate time used:1.308030605316162s
+2024-11-25 23:33:51,357 - Dev Result:
+2024-11-25 23:33:51,358 - {'rec': 'HR@1:0.1931,NDCG@1:0.1931,HR@5:0.4964,NDCG@5:0.3492,HR@10:0.6587,NDCG@10:0.4017,HR@20:0.8147,NDCG@20:0.4412,HR@50:0.9587,NDCG@50:0.4703', 'src': 'HR@1:0.4127,NDCG@1:0.4127,HR@5:0.7139,NDCG@5:0.5743,HR@10:0.8144,NDCG@10:0.6069,HR@20:0.8987,NDCG@20:0.6283,HR@50:0.9767,NDCG@50:0.6440'}
+2024-11-25 23:33:51,358 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-25 23:34:04,003 - model evaluate time used:11.92772126197815s
+2024-11-25 23:34:04,931 - model evaluate time used:0.8578178882598877s
+2024-11-25 23:34:05,489 - Test Result:
+2024-11-25 23:34:05,490 - {'rec': 'HR@1:0.1685,NDCG@1:0.1685,HR@5:0.4594,NDCG@5:0.3174,HR@10:0.6284,NDCG@10:0.3720,HR@20:0.7942,NDCG@20:0.4141,HR@50:0.9514,NDCG@50:0.4457', 'src': 'HR@1:0.4157,NDCG@1:0.4157,HR@5:0.7137,NDCG@5:0.5746,HR@10:0.8108,NDCG@10:0.6062,HR@20:0.8952,NDCG@20:0.6276,HR@50:0.9779,NDCG@50:0.6444'}
+2024-11-25 23:34:09,951 -  
+2024-11-25 23:34:09,951 - Epoch: 8
+2024-11-25 23:35:49,143 - epoch:8 step:500 time:98.94s |rec click_loss:0.2070 q_i_cl_loss:2.0547 his_cl_loss:0.0737 total_loss:0.2164| |src click_loss:0.1219 q_i_cl_loss:2.9011 his_cl_loss:0.0265 total_loss:0.1275|
+2024-11-25 23:37:13,768 - epoch:8 step:1000 time:183.57s |rec click_loss:0.2152 q_i_cl_loss:2.0854 his_cl_loss:0.0759 total_loss:0.2249| |src click_loss:0.1331 q_i_cl_loss:2.9336 his_cl_loss:0.0279 total_loss:0.1388|
+2024-11-25 23:38:38,391 - epoch:8 step:1500 time:268.19s |rec click_loss:0.2205 q_i_cl_loss:2.0958 his_cl_loss:0.0749 total_loss:0.2301| |src click_loss:0.1435 q_i_cl_loss:2.9440 his_cl_loss:0.0272 total_loss:0.1491|
+2024-11-25 23:40:06,733 - epoch:8 step:2000 time:356.53s |rec click_loss:0.2241 q_i_cl_loss:2.0991 his_cl_loss:0.0753 total_loss:0.2337| |src click_loss:0.1530 q_i_cl_loss:2.9472 his_cl_loss:0.0271 total_loss:0.1587|
+2024-11-25 23:41:31,280 - epoch:8 step:2500 time:441.08s |rec click_loss:0.2267 q_i_cl_loss:2.0946 his_cl_loss:0.0753 total_loss:0.2363| |src click_loss:0.1607 q_i_cl_loss:2.9423 his_cl_loss:0.0273 total_loss:0.1663|
+2024-11-25 23:42:52,510 - epoch:8 step:3000 time:522.31s |rec click_loss:0.2287 q_i_cl_loss:2.0918 his_cl_loss:0.0750 total_loss:0.2383| |src click_loss:0.1668 q_i_cl_loss:2.9347 his_cl_loss:0.0271 total_loss:0.1725|
+2024-11-25 23:44:02,988 - total time: 592.79s
+2024-11-25 23:44:02,990 - epoch:8 mean loss:0.2572
+2024-11-25 23:44:17,549 - model evaluate time used:14.557796716690063s
+2024-11-25 23:44:18,846 - model evaluate time used:1.2105929851531982s
+2024-11-25 23:44:19,649 - Dev Result:
+2024-11-25 23:44:19,649 - {'rec': 'HR@1:0.1960,NDCG@1:0.1960,HR@5:0.5007,NDCG@5:0.3531,HR@10:0.6645,NDCG@10:0.4061,HR@20:0.8178,NDCG@20:0.4449,HR@50:0.9602,NDCG@50:0.4737', 'src': 'HR@1:0.4055,NDCG@1:0.4055,HR@5:0.7081,NDCG@5:0.5670,HR@10:0.8101,NDCG@10:0.6002,HR@20:0.8965,NDCG@20:0.6221,HR@50:0.9762,NDCG@50:0.6382'}
+2024-11-25 23:44:24,166 -  
+2024-11-25 23:44:24,166 - Epoch: 9
+2024-11-25 23:46:03,154 - epoch:9 step:500 time:98.76s |rec click_loss:0.2049 q_i_cl_loss:2.0480 his_cl_loss:0.0747 total_loss:0.2144| |src click_loss:0.1211 q_i_cl_loss:2.8906 his_cl_loss:0.0264 total_loss:0.1267|
+2024-11-25 23:47:31,233 - epoch:9 step:1000 time:186.84s |rec click_loss:0.2136 q_i_cl_loss:2.0751 his_cl_loss:0.0754 total_loss:0.2232| |src click_loss:0.1312 q_i_cl_loss:2.9192 his_cl_loss:0.0265 total_loss:0.1367|
+2024-11-25 23:48:55,243 - epoch:9 step:1500 time:270.85s |rec click_loss:0.2192 q_i_cl_loss:2.0810 his_cl_loss:0.0748 total_loss:0.2288| |src click_loss:0.1418 q_i_cl_loss:2.9324 his_cl_loss:0.0262 total_loss:0.1474|
+2024-11-25 23:50:19,651 - epoch:9 step:2000 time:355.26s |rec click_loss:0.2230 q_i_cl_loss:2.0854 his_cl_loss:0.0749 total_loss:0.2326| |src click_loss:0.1513 q_i_cl_loss:2.9323 his_cl_loss:0.0266 total_loss:0.1569|
+2024-11-25 23:51:43,114 - epoch:9 step:2500 time:438.72s |rec click_loss:0.2257 q_i_cl_loss:2.0830 his_cl_loss:0.0746 total_loss:0.2352| |src click_loss:0.1590 q_i_cl_loss:2.9284 his_cl_loss:0.0262 total_loss:0.1645|
+2024-11-25 23:53:04,107 - epoch:9 step:3000 time:519.71s |rec click_loss:0.2276 q_i_cl_loss:2.0831 his_cl_loss:0.0748 total_loss:0.2372| |src click_loss:0.1651 q_i_cl_loss:2.9255 his_cl_loss:0.0262 total_loss:0.1707|
+2024-11-25 23:54:15,126 - total time: 590.74s
+2024-11-25 23:54:15,127 - epoch:9 mean loss:0.2560
+2024-11-25 23:54:29,594 - model evaluate time used:14.465728998184204s
+2024-11-25 23:54:30,913 - model evaluate time used:1.2315406799316406s
+2024-11-25 23:54:31,876 - Dev Result:
+2024-11-25 23:54:31,876 - {'rec': 'HR@1:0.1902,NDCG@1:0.1902,HR@5:0.4894,NDCG@5:0.3443,HR@10:0.6518,NDCG@10:0.3969,HR@20:0.8080,NDCG@20:0.4365,HR@50:0.9577,NDCG@50:0.4666', 'src': 'HR@1:0.4091,NDCG@1:0.4091,HR@5:0.7050,NDCG@5:0.5677,HR@10:0.8095,NDCG@10:0.6017,HR@20:0.8957,NDCG@20:0.6236,HR@50:0.9777,NDCG@50:0.6401'}
+2024-11-25 23:54:36,362 -  
+2024-11-25 23:54:36,362 - Epoch: 10
+2024-11-25 23:56:25,061 - epoch:10 step:500 time:108.48s |rec click_loss:0.2042 q_i_cl_loss:2.0576 his_cl_loss:0.0747 total_loss:0.2137| |src click_loss:0.1183 q_i_cl_loss:2.8794 his_cl_loss:0.0273 total_loss:0.1239|
+2024-11-25 23:57:49,603 - epoch:10 step:1000 time:193.02s |rec click_loss:0.2128 q_i_cl_loss:2.0866 his_cl_loss:0.0738 total_loss:0.2223| |src click_loss:0.1295 q_i_cl_loss:2.9151 his_cl_loss:0.0254 total_loss:0.1349|
+2024-11-25 23:59:12,323 - epoch:10 step:1500 time:275.74s |rec click_loss:0.2184 q_i_cl_loss:2.0940 his_cl_loss:0.0741 total_loss:0.2279| |src click_loss:0.1398 q_i_cl_loss:2.9316 his_cl_loss:0.0262 total_loss:0.1453|
+2024-11-26 00:00:37,903 - epoch:10 step:2000 time:361.32s |rec click_loss:0.2222 q_i_cl_loss:2.0951 his_cl_loss:0.0743 total_loss:0.2318| |src click_loss:0.1491 q_i_cl_loss:2.9308 his_cl_loss:0.0264 total_loss:0.1547|
+2024-11-26 00:02:00,755 - epoch:10 step:2500 time:444.17s |rec click_loss:0.2249 q_i_cl_loss:2.0918 his_cl_loss:0.0744 total_loss:0.2344| |src click_loss:0.1570 q_i_cl_loss:2.9254 his_cl_loss:0.0266 total_loss:0.1626|
+2024-11-26 00:03:21,323 - epoch:10 step:3000 time:524.74s |rec click_loss:0.2268 q_i_cl_loss:2.0917 his_cl_loss:0.0745 total_loss:0.2363| |src click_loss:0.1633 q_i_cl_loss:2.9213 his_cl_loss:0.0265 total_loss:0.1688|
+2024-11-26 00:04:31,971 - total time: 595.39s
+2024-11-26 00:04:31,973 - epoch:10 mean loss:0.2550
+2024-11-26 00:04:46,455 - model evaluate time used:14.481274843215942s
+2024-11-26 00:04:47,764 - model evaluate time used:1.2224276065826416s
+2024-11-26 00:04:48,720 - Dev Result:
+2024-11-26 00:04:48,720 - {'rec': 'HR@1:0.1945,NDCG@1:0.1945,HR@5:0.5013,NDCG@5:0.3527,HR@10:0.6670,NDCG@10:0.4063,HR@20:0.8214,NDCG@20:0.4455,HR@50:0.9624,NDCG@50:0.4739', 'src': 'HR@1:0.4112,NDCG@1:0.4112,HR@5:0.7168,NDCG@5:0.5749,HR@10:0.8162,NDCG@10:0.6072,HR@20:0.8989,NDCG@20:0.6282,HR@50:0.9789,NDCG@50:0.6444'}
+2024-11-26 00:04:48,720 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-26 00:05:01,377 - model evaluate time used:11.9999840259552s
+2024-11-26 00:05:02,319 - model evaluate time used:0.8696479797363281s
+2024-11-26 00:05:03,019 - Test Result:
+2024-11-26 00:05:03,019 - {'rec': 'HR@1:0.1683,NDCG@1:0.1683,HR@5:0.4614,NDCG@5:0.3187,HR@10:0.6307,NDCG@10:0.3735,HR@20:0.7961,NDCG@20:0.4154,HR@50:0.9551,NDCG@50:0.4474', 'src': 'HR@1:0.4255,NDCG@1:0.4255,HR@5:0.7178,NDCG@5:0.5828,HR@10:0.8131,NDCG@10:0.6138,HR@20:0.9004,NDCG@20:0.6359,HR@50:0.9772,NDCG@50:0.6514'}
+2024-11-26 00:05:07,471 -  
+2024-11-26 00:05:07,471 - Epoch: 11
+2024-11-26 00:06:51,388 - epoch:11 step:500 time:103.71s |rec click_loss:0.2023 q_i_cl_loss:2.0469 his_cl_loss:0.0724 total_loss:0.2115| |src click_loss:0.1185 q_i_cl_loss:2.8830 his_cl_loss:0.0271 total_loss:0.1241|
+2024-11-26 00:08:15,424 - epoch:11 step:1000 time:187.74s |rec click_loss:0.2114 q_i_cl_loss:2.0778 his_cl_loss:0.0736 total_loss:0.2209| |src click_loss:0.1291 q_i_cl_loss:2.9074 his_cl_loss:0.0261 total_loss:0.1346|
+2024-11-26 00:09:39,215 - epoch:11 step:1500 time:271.54s |rec click_loss:0.2175 q_i_cl_loss:2.0917 his_cl_loss:0.0739 total_loss:0.2270| |src click_loss:0.1387 q_i_cl_loss:2.9213 his_cl_loss:0.0260 total_loss:0.1443|
+2024-11-26 00:11:08,769 - epoch:11 step:2000 time:361.09s |rec click_loss:0.2214 q_i_cl_loss:2.0960 his_cl_loss:0.0734 total_loss:0.2308| |src click_loss:0.1478 q_i_cl_loss:2.9200 his_cl_loss:0.0254 total_loss:0.1532|
+2024-11-26 00:12:33,678 - epoch:11 step:2500 time:446.00s |rec click_loss:0.2241 q_i_cl_loss:2.0954 his_cl_loss:0.0733 total_loss:0.2335| |src click_loss:0.1552 q_i_cl_loss:2.9152 his_cl_loss:0.0256 total_loss:0.1607|
+2024-11-26 00:13:54,952 - epoch:11 step:3000 time:527.27s |rec click_loss:0.2261 q_i_cl_loss:2.0941 his_cl_loss:0.0733 total_loss:0.2356| |src click_loss:0.1618 q_i_cl_loss:2.9134 his_cl_loss:0.0254 total_loss:0.1673|
+2024-11-26 00:15:05,236 - total time: 597.56s
+2024-11-26 00:15:05,237 - epoch:11 mean loss:0.2542
+2024-11-26 00:15:19,669 - model evaluate time used:14.430589437484741s
+2024-11-26 00:15:20,962 - model evaluate time used:1.196857213973999s
+2024-11-26 00:15:21,852 - Dev Result:
+2024-11-26 00:15:21,852 - {'rec': 'HR@1:0.1862,NDCG@1:0.1862,HR@5:0.4867,NDCG@5:0.3409,HR@10:0.6512,NDCG@10:0.3941,HR@20:0.8088,NDCG@20:0.4340,HR@50:0.9567,NDCG@50:0.4638', 'src': 'HR@1:0.4109,NDCG@1:0.4109,HR@5:0.7121,NDCG@5:0.5723,HR@10:0.8092,NDCG@10:0.6039,HR@20:0.8953,NDCG@20:0.6258,HR@50:0.9767,NDCG@50:0.6422'}
+2024-11-26 00:15:26,412 -  
+2024-11-26 00:15:26,412 - Epoch: 12
+2024-11-26 00:17:03,897 - epoch:12 step:500 time:97.25s |rec click_loss:0.2021 q_i_cl_loss:2.0618 his_cl_loss:0.0730 total_loss:0.2115| |src click_loss:0.1160 q_i_cl_loss:2.8778 his_cl_loss:0.0254 total_loss:0.1214|
+2024-11-26 00:18:27,778 - epoch:12 step:1000 time:181.13s |rec click_loss:0.2111 q_i_cl_loss:2.0967 his_cl_loss:0.0743 total_loss:0.2206| |src click_loss:0.1272 q_i_cl_loss:2.9111 his_cl_loss:0.0265 total_loss:0.1328|
+2024-11-26 00:19:53,724 - epoch:12 step:1500 time:267.08s |rec click_loss:0.2169 q_i_cl_loss:2.1043 his_cl_loss:0.0733 total_loss:0.2263| |src click_loss:0.1370 q_i_cl_loss:2.9202 his_cl_loss:0.0253 total_loss:0.1425|
+2024-11-26 00:21:18,419 - epoch:12 step:2000 time:351.77s |rec click_loss:0.2208 q_i_cl_loss:2.1099 his_cl_loss:0.0735 total_loss:0.2302| |src click_loss:0.1462 q_i_cl_loss:2.9228 his_cl_loss:0.0258 total_loss:0.1517|
+2024-11-26 00:22:41,595 - epoch:12 step:2500 time:434.95s |rec click_loss:0.2236 q_i_cl_loss:2.1076 his_cl_loss:0.0732 total_loss:0.2330| |src click_loss:0.1540 q_i_cl_loss:2.9174 his_cl_loss:0.0256 total_loss:0.1595|
+2024-11-26 00:24:02,728 - epoch:12 step:3000 time:516.08s |rec click_loss:0.2256 q_i_cl_loss:2.1068 his_cl_loss:0.0730 total_loss:0.2350| |src click_loss:0.1603 q_i_cl_loss:2.9137 his_cl_loss:0.0257 total_loss:0.1657|
+2024-11-26 00:25:13,257 - total time: 586.61s
+2024-11-26 00:25:13,260 - epoch:12 mean loss:0.2534
+2024-11-26 00:25:27,734 - model evaluate time used:14.473325490951538s
+2024-11-26 00:25:29,050 - model evaluate time used:1.1968581676483154s
+2024-11-26 00:25:29,821 - Dev Result:
+2024-11-26 00:25:29,821 - {'rec': 'HR@1:0.1905,NDCG@1:0.1905,HR@5:0.5005,NDCG@5:0.3502,HR@10:0.6675,NDCG@10:0.4042,HR@20:0.8233,NDCG@20:0.4438,HR@50:0.9632,NDCG@50:0.4720', 'src': 'HR@1:0.4081,NDCG@1:0.4081,HR@5:0.7059,NDCG@5:0.5674,HR@10:0.8095,NDCG@10:0.6011,HR@20:0.8955,NDCG@20:0.6228,HR@50:0.9773,NDCG@50:0.6394'}
+2024-11-26 00:25:34,333 -  
+2024-11-26 00:25:34,333 - Epoch: 13
+2024-11-26 00:27:12,362 - epoch:13 step:500 time:97.77s |rec click_loss:0.2018 q_i_cl_loss:2.0675 his_cl_loss:0.0740 total_loss:0.2113| |src click_loss:0.1171 q_i_cl_loss:2.8811 his_cl_loss:0.0265 total_loss:0.1226|
+2024-11-26 00:28:38,743 - epoch:13 step:1000 time:184.15s |rec click_loss:0.2106 q_i_cl_loss:2.1043 his_cl_loss:0.0748 total_loss:0.2202| |src click_loss:0.1267 q_i_cl_loss:2.9069 his_cl_loss:0.0267 total_loss:0.1323|
+2024-11-26 00:30:02,677 - epoch:13 step:1500 time:268.08s |rec click_loss:0.2164 q_i_cl_loss:2.1131 his_cl_loss:0.0739 total_loss:0.2259| |src click_loss:0.1365 q_i_cl_loss:2.9191 his_cl_loss:0.0261 total_loss:0.1420|
+2024-11-26 00:31:26,883 - epoch:13 step:2000 time:352.29s |rec click_loss:0.2202 q_i_cl_loss:2.1138 his_cl_loss:0.0730 total_loss:0.2297| |src click_loss:0.1456 q_i_cl_loss:2.9207 his_cl_loss:0.0259 total_loss:0.1511|
+2024-11-26 00:32:49,873 - epoch:13 step:2500 time:435.27s |rec click_loss:0.2230 q_i_cl_loss:2.1140 his_cl_loss:0.0732 total_loss:0.2325| |src click_loss:0.1534 q_i_cl_loss:2.9167 his_cl_loss:0.0259 total_loss:0.1589|
+2024-11-26 00:34:10,909 - epoch:13 step:3000 time:516.31s |rec click_loss:0.2251 q_i_cl_loss:2.1126 his_cl_loss:0.0730 total_loss:0.2345| |src click_loss:0.1598 q_i_cl_loss:2.9111 his_cl_loss:0.0260 total_loss:0.1653|
+2024-11-26 00:35:21,523 - total time: 586.93s
+2024-11-26 00:35:21,525 - epoch:13 mean loss:0.2530
+2024-11-26 00:35:35,962 - model evaluate time used:14.43640422821045s
+2024-11-26 00:35:37,427 - model evaluate time used:1.2036943435668945s
+2024-11-26 00:35:38,193 - Dev Result:
+2024-11-26 00:35:38,193 - {'rec': 'HR@1:0.1894,NDCG@1:0.1894,HR@5:0.4929,NDCG@5:0.3454,HR@10:0.6559,NDCG@10:0.3981,HR@20:0.8118,NDCG@20:0.4377,HR@50:0.9572,NDCG@50:0.4670', 'src': 'HR@1:0.4158,NDCG@1:0.4158,HR@5:0.7152,NDCG@5:0.5759,HR@10:0.8122,NDCG@10:0.6074,HR@20:0.8980,NDCG@20:0.6292,HR@50:0.9782,NDCG@50:0.6453'}
+2024-11-26 00:35:42,744 -  
+2024-11-26 00:35:42,744 - Epoch: 14
+2024-11-26 00:37:26,419 - epoch:14 step:500 time:103.46s |rec click_loss:0.2003 q_i_cl_loss:2.0805 his_cl_loss:0.0700 total_loss:0.2094| |src click_loss:0.1147 q_i_cl_loss:2.8773 his_cl_loss:0.0263 total_loss:0.1202|
+2024-11-26 00:38:50,112 - epoch:14 step:1000 time:187.15s |rec click_loss:0.2096 q_i_cl_loss:2.1071 his_cl_loss:0.0706 total_loss:0.2188| |src click_loss:0.1249 q_i_cl_loss:2.9093 his_cl_loss:0.0267 total_loss:0.1305|
+2024-11-26 00:40:14,465 - epoch:14 step:1500 time:271.50s |rec click_loss:0.2156 q_i_cl_loss:2.1178 his_cl_loss:0.0707 total_loss:0.2248| |src click_loss:0.1357 q_i_cl_loss:2.9194 his_cl_loss:0.0270 total_loss:0.1413|
+2024-11-26 00:41:41,787 - epoch:14 step:2000 time:358.82s |rec click_loss:0.2196 q_i_cl_loss:2.1208 his_cl_loss:0.0715 total_loss:0.2289| |src click_loss:0.1447 q_i_cl_loss:2.9206 his_cl_loss:0.0270 total_loss:0.1503|
+2024-11-26 00:43:04,833 - epoch:14 step:2500 time:441.87s |rec click_loss:0.2225 q_i_cl_loss:2.1185 his_cl_loss:0.0719 total_loss:0.2318| |src click_loss:0.1523 q_i_cl_loss:2.9172 his_cl_loss:0.0264 total_loss:0.1579|
+2024-11-26 00:44:25,834 - epoch:14 step:3000 time:522.87s |rec click_loss:0.2247 q_i_cl_loss:2.1185 his_cl_loss:0.0718 total_loss:0.2340| |src click_loss:0.1587 q_i_cl_loss:2.9112 his_cl_loss:0.0267 total_loss:0.1643|
+2024-11-26 00:45:36,597 - total time: 593.64s
+2024-11-26 00:45:36,599 - epoch:14 mean loss:0.2523
+2024-11-26 00:45:51,033 - model evaluate time used:14.433098554611206s
+2024-11-26 00:45:52,502 - model evaluate time used:1.2275424003601074s
+2024-11-26 00:45:53,274 - Dev Result:
+2024-11-26 00:45:53,274 - {'rec': 'HR@1:0.1914,NDCG@1:0.1914,HR@5:0.4974,NDCG@5:0.3489,HR@10:0.6626,NDCG@10:0.4024,HR@20:0.8157,NDCG@20:0.4412,HR@50:0.9583,NDCG@50:0.4699', 'src': 'HR@1:0.4189,NDCG@1:0.4189,HR@5:0.7145,NDCG@5:0.5770,HR@10:0.8141,NDCG@10:0.6092,HR@20:0.8992,NDCG@20:0.6308,HR@50:0.9753,NDCG@50:0.6462'}
+2024-11-26 00:45:57,743 -  
+2024-11-26 00:45:57,743 - Epoch: 15
+2024-11-26 00:47:39,755 - epoch:15 step:500 time:101.79s |rec click_loss:0.1820 q_i_cl_loss:1.8115 his_cl_loss:0.0636 total_loss:0.1901| |src click_loss:0.0988 q_i_cl_loss:2.6461 his_cl_loss:0.0213 total_loss:0.1036|
+2024-11-26 00:49:02,920 - epoch:15 step:1000 time:184.96s |rec click_loss:0.1800 q_i_cl_loss:1.7010 his_cl_loss:0.0619 total_loss:0.1879| |src click_loss:0.0954 q_i_cl_loss:2.5751 his_cl_loss:0.0211 total_loss:0.1001|
+2024-11-26 00:50:26,560 - epoch:15 step:1500 time:268.60s |rec click_loss:0.1787 q_i_cl_loss:1.6039 his_cl_loss:0.0611 total_loss:0.1865| |src click_loss:0.0931 q_i_cl_loss:2.5035 his_cl_loss:0.0204 total_loss:0.0976|
+2024-11-26 00:51:49,582 - epoch:15 step:2000 time:351.62s |rec click_loss:0.1777 q_i_cl_loss:1.5262 his_cl_loss:0.0606 total_loss:0.1852| |src click_loss:0.0913 q_i_cl_loss:2.4376 his_cl_loss:0.0206 total_loss:0.0958|
+2024-11-26 00:53:12,829 - epoch:15 step:2500 time:434.87s |rec click_loss:0.1767 q_i_cl_loss:1.4498 his_cl_loss:0.0602 total_loss:0.1842| |src click_loss:0.0901 q_i_cl_loss:2.3717 his_cl_loss:0.0201 total_loss:0.0944|
+2024-11-26 00:54:38,878 - epoch:15 step:3000 time:520.92s |rec click_loss:0.1760 q_i_cl_loss:1.3805 his_cl_loss:0.0600 total_loss:0.1834| |src click_loss:0.0893 q_i_cl_loss:2.3084 his_cl_loss:0.0199 total_loss:0.0936|
+2024-11-26 00:55:52,629 - total time: 594.67s
+2024-11-26 00:55:52,631 - epoch:15 mean loss:0.1920
+2024-11-26 00:56:07,060 - model evaluate time used:14.427639484405518s
+2024-11-26 00:56:08,367 - model evaluate time used:1.2189371585845947s
+2024-11-26 00:56:09,262 - Dev Result:
+2024-11-26 00:56:09,262 - {'rec': 'HR@1:0.2139,NDCG@1:0.2139,HR@5:0.5367,NDCG@5:0.3809,HR@10:0.6984,NDCG@10:0.4333,HR@20:0.8424,NDCG@20:0.4698,HR@50:0.9673,NDCG@50:0.4950', 'src': 'HR@1:0.4792,NDCG@1:0.4792,HR@5:0.7427,NDCG@5:0.6175,HR@10:0.8381,NDCG@10:0.6485,HR@20:0.9142,NDCG@20:0.6677,HR@50:0.9804,NDCG@50:0.6811'}
+2024-11-26 00:56:09,262 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-26 00:56:22,065 - model evaluate time used:12.153212070465088s
+2024-11-26 00:56:23,069 - model evaluate time used:0.9288656711578369s
+2024-11-26 00:56:23,842 - Test Result:
+2024-11-26 00:56:23,842 - {'rec': 'HR@1:0.1948,NDCG@1:0.1948,HR@5:0.5055,NDCG@5:0.3553,HR@10:0.6680,NDCG@10:0.4079,HR@20:0.8212,NDCG@20:0.4468,HR@50:0.9597,NDCG@50:0.4747', 'src': 'HR@1:0.4923,NDCG@1:0.4923,HR@5:0.7457,NDCG@5:0.6260,HR@10:0.8354,NDCG@10:0.6551,HR@20:0.9103,NDCG@20:0.6741,HR@50:0.9811,NDCG@50:0.6884'}
+2024-11-26 00:56:28,331 -  
+2024-11-26 00:56:28,331 - Epoch: 16
+2024-11-26 00:58:05,714 - epoch:16 step:500 time:97.15s |rec click_loss:0.1433 q_i_cl_loss:0.8933 his_cl_loss:0.0578 total_loss:0.1499| |src click_loss:0.0425 q_i_cl_loss:1.8058 his_cl_loss:0.0194 total_loss:0.0462|
+2024-11-26 00:59:29,143 - epoch:16 step:1000 time:180.58s |rec click_loss:0.1441 q_i_cl_loss:0.8739 his_cl_loss:0.0573 total_loss:0.1507| |src click_loss:0.0439 q_i_cl_loss:1.7814 his_cl_loss:0.0194 total_loss:0.0476|
+2024-11-26 01:00:54,220 - epoch:16 step:1500 time:265.66s |rec click_loss:0.1452 q_i_cl_loss:0.8545 his_cl_loss:0.0573 total_loss:0.1518| |src click_loss:0.0450 q_i_cl_loss:1.7588 his_cl_loss:0.0190 total_loss:0.0487|
+2024-11-26 01:02:17,726 - epoch:16 step:2000 time:349.16s |rec click_loss:0.1464 q_i_cl_loss:0.8373 his_cl_loss:0.0574 total_loss:0.1530| |src click_loss:0.0464 q_i_cl_loss:1.7378 his_cl_loss:0.0190 total_loss:0.0500|
+2024-11-26 01:03:40,149 - epoch:16 step:2500 time:431.59s |rec click_loss:0.1474 q_i_cl_loss:0.8199 his_cl_loss:0.0575 total_loss:0.1540| |src click_loss:0.0477 q_i_cl_loss:1.7134 his_cl_loss:0.0190 total_loss:0.0513|
+2024-11-26 01:05:00,906 - epoch:16 step:3000 time:512.34s |rec click_loss:0.1484 q_i_cl_loss:0.8043 his_cl_loss:0.0575 total_loss:0.1549| |src click_loss:0.0495 q_i_cl_loss:1.6906 his_cl_loss:0.0190 total_loss:0.0531|
+2024-11-26 01:06:11,391 - total time: 582.83s
+2024-11-26 01:06:11,393 - epoch:16 mean loss:0.1611
+2024-11-26 01:06:25,800 - model evaluate time used:14.406006336212158s
+2024-11-26 01:06:27,109 - model evaluate time used:1.2029058933258057s
+2024-11-26 01:06:27,810 - Dev Result:
+2024-11-26 01:06:27,810 - {'rec': 'HR@1:0.2134,NDCG@1:0.2134,HR@5:0.5392,NDCG@5:0.3817,HR@10:0.7016,NDCG@10:0.4343,HR@20:0.8454,NDCG@20:0.4709,HR@50:0.9689,NDCG@50:0.4958', 'src': 'HR@1:0.5136,NDCG@1:0.5136,HR@5:0.7412,NDCG@5:0.6309,HR@10:0.8386,NDCG@10:0.6625,HR@20:0.9169,NDCG@20:0.6824,HR@50:0.9812,NDCG@50:0.6953'}
+2024-11-26 01:06:27,810 - save model to: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-26 01:06:40,619 - model evaluate time used:12.022709846496582s
+2024-11-26 01:06:41,583 - model evaluate time used:0.892040491104126s
+2024-11-26 01:06:42,203 - Test Result:
+2024-11-26 01:06:42,203 - {'rec': 'HR@1:0.1990,NDCG@1:0.1990,HR@5:0.5169,NDCG@5:0.3632,HR@10:0.6792,NDCG@10:0.4158,HR@20:0.8279,NDCG@20:0.4535,HR@50:0.9627,NDCG@50:0.4807', 'src': 'HR@1:0.5282,NDCG@1:0.5282,HR@5:0.7476,NDCG@5:0.6417,HR@10:0.8369,NDCG@10:0.6708,HR@20:0.9117,NDCG@20:0.6899,HR@50:0.9816,NDCG@50:0.7040'}
+2024-11-26 01:06:46,749 -  
+2024-11-26 01:06:46,749 - Epoch: 17
+2024-11-26 01:08:25,615 - epoch:17 step:500 time:98.65s |rec click_loss:0.1227 q_i_cl_loss:0.6720 his_cl_loss:0.0567 total_loss:0.1290| |src click_loss:0.0297 q_i_cl_loss:1.4653 his_cl_loss:0.0190 total_loss:0.0331|
+2024-11-26 01:09:51,109 - epoch:17 step:1000 time:184.14s |rec click_loss:0.1242 q_i_cl_loss:0.6827 his_cl_loss:0.0565 total_loss:0.1306| |src click_loss:0.0311 q_i_cl_loss:1.4909 his_cl_loss:0.0194 total_loss:0.0345|
+2024-11-26 01:11:15,190 - epoch:17 step:1500 time:268.22s |rec click_loss:0.1261 q_i_cl_loss:0.6834 his_cl_loss:0.0567 total_loss:0.1325| |src click_loss:0.0335 q_i_cl_loss:1.4985 his_cl_loss:0.0192 total_loss:0.0369|
+2024-11-26 01:12:39,555 - epoch:17 step:2000 time:352.59s |rec click_loss:0.1279 q_i_cl_loss:0.6837 his_cl_loss:0.0568 total_loss:0.1343| |src click_loss:0.0363 q_i_cl_loss:1.5022 his_cl_loss:0.0189 total_loss:0.0397|
+2024-11-26 01:14:03,357 - epoch:17 step:2500 time:436.39s |rec click_loss:0.1297 q_i_cl_loss:0.6799 his_cl_loss:0.0568 total_loss:0.1360| |src click_loss:0.0393 q_i_cl_loss:1.4989 his_cl_loss:0.0190 total_loss:0.0427|
+2024-11-26 01:15:24,467 - epoch:17 step:3000 time:517.50s |rec click_loss:0.1313 q_i_cl_loss:0.6759 his_cl_loss:0.0566 total_loss:0.1377| |src click_loss:0.0422 q_i_cl_loss:1.4944 his_cl_loss:0.0187 total_loss:0.0455|
+2024-11-26 01:16:35,260 - total time: 588.30s
+2024-11-26 01:16:35,263 - epoch:17 mean loss:0.1438
+2024-11-26 01:16:49,815 - model evaluate time used:14.551786184310913s
+2024-11-26 01:16:51,244 - model evaluate time used:1.2436623573303223s
+2024-11-26 01:16:52,051 - Dev Result:
+2024-11-26 01:16:52,052 - {'rec': 'HR@1:0.2072,NDCG@1:0.2072,HR@5:0.5335,NDCG@5:0.3754,HR@10:0.6980,NDCG@10:0.4287,HR@20:0.8407,NDCG@20:0.4649,HR@50:0.9685,NDCG@50:0.4907', 'src': 'HR@1:0.4966,NDCG@1:0.4966,HR@5:0.7397,NDCG@5:0.6232,HR@10:0.8351,NDCG@10:0.6544,HR@20:0.9135,NDCG@20:0.6743,HR@50:0.9806,NDCG@50:0.6879'}
+2024-11-26 01:16:56,649 -  
+2024-11-26 01:16:56,649 - Epoch: 18
+2024-11-26 01:18:39,086 - epoch:18 step:500 time:102.20s |rec click_loss:0.1089 q_i_cl_loss:0.6172 his_cl_loss:0.0562 total_loss:0.1151| |src click_loss:0.0250 q_i_cl_loss:1.3893 his_cl_loss:0.0176 total_loss:0.0281|
+2024-11-26 01:20:03,053 - epoch:18 step:1000 time:186.17s |rec click_loss:0.1110 q_i_cl_loss:0.6343 his_cl_loss:0.0564 total_loss:0.1173| |src click_loss:0.0271 q_i_cl_loss:1.4232 his_cl_loss:0.0179 total_loss:0.0303|
+2024-11-26 01:21:24,603 - epoch:18 step:1500 time:267.72s |rec click_loss:0.1133 q_i_cl_loss:0.6404 his_cl_loss:0.0562 total_loss:0.1195| |src click_loss:0.0293 q_i_cl_loss:1.4351 his_cl_loss:0.0181 total_loss:0.0326|
+2024-11-26 01:22:44,355 - epoch:18 step:2000 time:347.47s |rec click_loss:0.1155 q_i_cl_loss:0.6436 his_cl_loss:0.0563 total_loss:0.1218| |src click_loss:0.0318 q_i_cl_loss:1.4412 his_cl_loss:0.0179 total_loss:0.0351|
+2024-11-26 01:24:07,403 - epoch:18 step:2500 time:430.52s |rec click_loss:0.1176 q_i_cl_loss:0.6444 his_cl_loss:0.0562 total_loss:0.1239| |src click_loss:0.0340 q_i_cl_loss:1.4433 his_cl_loss:0.0179 total_loss:0.0373|
+2024-11-26 01:25:28,430 - epoch:18 step:3000 time:511.55s |rec click_loss:0.1196 q_i_cl_loss:0.6438 his_cl_loss:0.0562 total_loss:0.1259| |src click_loss:0.0366 q_i_cl_loss:1.4452 his_cl_loss:0.0178 total_loss:0.0399|
+2024-11-26 01:26:38,965 - total time: 582.08s
+2024-11-26 01:26:38,967 - epoch:18 mean loss:0.1318
+2024-11-26 01:26:53,344 - model evaluate time used:14.37547516822815s
+2024-11-26 01:26:54,834 - model evaluate time used:1.2236099243164062s
+2024-11-26 01:26:55,684 - Dev Result:
+2024-11-26 01:26:55,684 - {'rec': 'HR@1:0.2009,NDCG@1:0.2009,HR@5:0.5257,NDCG@5:0.3677,HR@10:0.6980,NDCG@10:0.4236,HR@20:0.8427,NDCG@20:0.4604,HR@50:0.9700,NDCG@50:0.4860', 'src': 'HR@1:0.5121,NDCG@1:0.5121,HR@5:0.7344,NDCG@5:0.6263,HR@10:0.8347,NDCG@10:0.6589,HR@20:0.9130,NDCG@20:0.6788,HR@50:0.9799,NDCG@50:0.6923'}
+2024-11-26 01:27:00,263 -  
+2024-11-26 01:27:00,263 - Epoch: 19
+2024-11-26 01:28:45,518 - epoch:19 step:500 time:105.03s |rec click_loss:0.1001 q_i_cl_loss:0.6026 his_cl_loss:0.0556 total_loss:0.1063| |src click_loss:0.0228 q_i_cl_loss:1.3708 his_cl_loss:0.0187 total_loss:0.0260|
+2024-11-26 01:30:08,550 - epoch:19 step:1000 time:188.06s |rec click_loss:0.1025 q_i_cl_loss:0.6188 his_cl_loss:0.0562 total_loss:0.1088| |src click_loss:0.0250 q_i_cl_loss:1.4023 his_cl_loss:0.0187 total_loss:0.0283|
+2024-11-26 01:31:31,810 - epoch:19 step:1500 time:271.32s |rec click_loss:0.1049 q_i_cl_loss:0.6266 his_cl_loss:0.0561 total_loss:0.1112| |src click_loss:0.0271 q_i_cl_loss:1.4158 his_cl_loss:0.0188 total_loss:0.0304|
+2024-11-26 01:32:58,576 - epoch:19 step:2000 time:358.08s |rec click_loss:0.1072 q_i_cl_loss:0.6314 his_cl_loss:0.0561 total_loss:0.1134| |src click_loss:0.0295 q_i_cl_loss:1.4246 his_cl_loss:0.0192 total_loss:0.0328|
+2024-11-26 01:34:24,119 - epoch:19 step:2500 time:443.63s |rec click_loss:0.1094 q_i_cl_loss:0.6317 his_cl_loss:0.0560 total_loss:0.1156| |src click_loss:0.0321 q_i_cl_loss:1.4298 his_cl_loss:0.0187 total_loss:0.0354|
+2024-11-26 01:35:48,253 - epoch:19 step:3000 time:527.76s |rec click_loss:0.1115 q_i_cl_loss:0.6324 his_cl_loss:0.0560 total_loss:0.1177| |src click_loss:0.0346 q_i_cl_loss:1.4327 his_cl_loss:0.0186 total_loss:0.0379|
+2024-11-26 01:37:01,840 - total time: 601.35s
+2024-11-26 01:37:01,841 - epoch:19 mean loss:0.1234
+2024-11-26 01:37:16,252 - model evaluate time used:14.409493923187256s
+2024-11-26 01:37:17,606 - model evaluate time used:1.1988558769226074s
+2024-11-26 01:37:18,452 - Dev Result:
+2024-11-26 01:37:18,452 - {'rec': 'HR@1:0.1892,NDCG@1:0.1892,HR@5:0.5114,NDCG@5:0.3541,HR@10:0.6913,NDCG@10:0.4124,HR@20:0.8410,NDCG@20:0.4504,HR@50:0.9702,NDCG@50:0.4765', 'src': 'HR@1:0.5125,NDCG@1:0.5125,HR@5:0.7360,NDCG@5:0.6272,HR@10:0.8334,NDCG@10:0.6588,HR@20:0.9133,NDCG@20:0.6791,HR@50:0.9800,NDCG@50:0.6925'}
+2024-11-26 01:37:23,000 -  
+2024-11-26 01:37:23,000 - Epoch: 20
+2024-11-26 01:39:01,379 - epoch:20 step:500 time:98.15s |rec click_loss:0.0934 q_i_cl_loss:0.5911 his_cl_loss:0.0560 total_loss:0.0996| |src click_loss:0.0235 q_i_cl_loss:1.3721 his_cl_loss:0.0189 total_loss:0.0267|
+2024-11-26 01:40:27,541 - epoch:20 step:1000 time:184.31s |rec click_loss:0.0959 q_i_cl_loss:0.6096 his_cl_loss:0.0555 total_loss:0.1021| |src click_loss:0.0243 q_i_cl_loss:1.3990 his_cl_loss:0.0181 total_loss:0.0275|
+2024-11-26 01:41:57,893 - epoch:20 step:1500 time:274.66s |rec click_loss:0.0984 q_i_cl_loss:0.6171 his_cl_loss:0.0552 total_loss:0.1045| |src click_loss:0.0263 q_i_cl_loss:1.4106 his_cl_loss:0.0183 total_loss:0.0296|
+2024-11-26 01:43:22,016 - epoch:20 step:2000 time:358.79s |rec click_loss:0.1008 q_i_cl_loss:0.6225 his_cl_loss:0.0554 total_loss:0.1069| |src click_loss:0.0283 q_i_cl_loss:1.4201 his_cl_loss:0.0185 total_loss:0.0315|
+2024-11-26 01:44:44,687 - epoch:20 step:2500 time:441.46s |rec click_loss:0.1031 q_i_cl_loss:0.6234 his_cl_loss:0.0554 total_loss:0.1092| |src click_loss:0.0306 q_i_cl_loss:1.4246 his_cl_loss:0.0187 total_loss:0.0339|
+2024-11-26 01:46:06,065 - epoch:20 step:3000 time:522.83s |rec click_loss:0.1053 q_i_cl_loss:0.6244 his_cl_loss:0.0554 total_loss:0.1115| |src click_loss:0.0332 q_i_cl_loss:1.4284 his_cl_loss:0.0188 total_loss:0.0365|
+2024-11-26 01:47:16,718 - total time: 593.49s
+2024-11-26 01:47:16,720 - epoch:20 mean loss:0.1171
+2024-11-26 01:47:31,133 - model evaluate time used:14.411741495132446s
+2024-11-26 01:47:32,472 - model evaluate time used:1.1832387447357178s
+2024-11-26 01:47:33,247 - Dev Result:
+2024-11-26 01:47:33,248 - {'rec': 'HR@1:0.1783,NDCG@1:0.1783,HR@5:0.4965,NDCG@5:0.3403,HR@10:0.6807,NDCG@10:0.4000,HR@20:0.8326,NDCG@20:0.4386,HR@50:0.9685,NDCG@50:0.4660', 'src': 'HR@1:0.4849,NDCG@1:0.4849,HR@5:0.7306,NDCG@5:0.6128,HR@10:0.8328,NDCG@10:0.6460,HR@20:0.9089,NDCG@20:0.6653,HR@50:0.9794,NDCG@50:0.6795'}
+2024-11-26 01:47:37,752 -  
+2024-11-26 01:47:37,752 - Epoch: 21
+2024-11-26 01:49:18,088 - epoch:21 step:500 time:100.11s |rec click_loss:0.0863 q_i_cl_loss:0.5052 his_cl_loss:0.0542 total_loss:0.0922| |src click_loss:0.0206 q_i_cl_loss:1.2608 his_cl_loss:0.0181 total_loss:0.0236|
+2024-11-26 01:50:41,683 - epoch:21 step:1000 time:183.71s |rec click_loss:0.0856 q_i_cl_loss:0.4835 his_cl_loss:0.0542 total_loss:0.0915| |src click_loss:0.0202 q_i_cl_loss:1.2321 his_cl_loss:0.0169 total_loss:0.0232|
+2024-11-26 01:52:05,054 - epoch:21 step:1500 time:267.08s |rec click_loss:0.0856 q_i_cl_loss:0.4655 his_cl_loss:0.0544 total_loss:0.0915| |src click_loss:0.0201 q_i_cl_loss:1.2050 his_cl_loss:0.0173 total_loss:0.0231|
+2024-11-26 01:53:28,520 - epoch:21 step:2000 time:350.55s |rec click_loss:0.0856 q_i_cl_loss:0.4582 his_cl_loss:0.0545 total_loss:0.0915| |src click_loss:0.0200 q_i_cl_loss:1.1963 his_cl_loss:0.0172 total_loss:0.0229|
+2024-11-26 01:54:51,460 - epoch:21 step:2500 time:433.49s |rec click_loss:0.0855 q_i_cl_loss:0.4493 his_cl_loss:0.0546 total_loss:0.0914| |src click_loss:0.0199 q_i_cl_loss:1.1818 his_cl_loss:0.0172 total_loss:0.0228|
+2024-11-26 01:56:12,612 - epoch:21 step:3000 time:514.64s |rec click_loss:0.0855 q_i_cl_loss:0.4392 his_cl_loss:0.0546 total_loss:0.0914| |src click_loss:0.0199 q_i_cl_loss:1.1653 his_cl_loss:0.0173 total_loss:0.0228|
+2024-11-26 01:57:23,355 - total time: 585.38s
+2024-11-26 01:57:23,358 - epoch:21 mean loss:0.0937
+2024-11-26 01:57:37,724 - model evaluate time used:14.365350723266602s
+2024-11-26 01:57:39,177 - model evaluate time used:1.2430312633514404s
+2024-11-26 01:57:39,978 - Dev Result:
+2024-11-26 01:57:39,978 - {'rec': 'HR@1:0.1828,NDCG@1:0.1828,HR@5:0.4939,NDCG@5:0.3415,HR@10:0.6802,NDCG@10:0.4018,HR@20:0.8347,NDCG@20:0.4411,HR@50:0.9690,NDCG@50:0.4682', 'src': 'HR@1:0.5260,NDCG@1:0.5260,HR@5:0.7360,NDCG@5:0.6331,HR@10:0.8375,NDCG@10:0.6661,HR@20:0.9119,NDCG@20:0.6849,HR@50:0.9801,NDCG@50:0.6987'}
+2024-11-26 01:57:39,978 - Early stop at 22 based on dev result.
+2024-11-26 01:57:39,978 -  
+2024-11-26 01:57:39,978 - Best Dev Result at epoch:16
+2024-11-26 01:57:39,978 - {'rec': 'HR@1:0.2134,NDCG@1:0.2134,HR@5:0.5392,NDCG@5:0.3817,HR@10:0.7016,NDCG@10:0.4343,HR@20:0.8454,NDCG@20:0.4709,HR@50:0.9689,NDCG@50:0.4958', 'src': 'HR@1:0.5136,NDCG@1:0.5136,HR@5:0.7412,NDCG@5:0.6309,HR@10:0.8386,NDCG@10:0.6625,HR@20:0.9169,NDCG@20:0.6824,HR@50:0.9812,NDCG@50:0.6953'}
+2024-11-26 01:57:39,978 - load model from: output/KuaiSAR/UniSAR/checkpoints/20241125-220622/best.pt
+2024-11-26 01:57:52,040 - model evaluate time used:11.925066709518433s
+2024-11-26 01:57:53,120 - model evaluate time used:0.863588809967041s
+2024-11-26 01:57:53,740 -  
+2024-11-26 01:57:53,740 - Test Result:
+2024-11-26 01:57:53,740 - {'rec': 'HR@1:0.1990,NDCG@1:0.1990,HR@5:0.5169,NDCG@5:0.3632,HR@10:0.6792,NDCG@10:0.4158,HR@20:0.8279,NDCG@20:0.4535,HR@50:0.9627,NDCG@50:0.4807', 'src': 'HR@1:0.5282,NDCG@1:0.5282,HR@5:0.7476,NDCG@5:0.6417,HR@10:0.8369,NDCG@10:0.6708,HR@20:0.9117,NDCG@20:0.6899,HR@50:0.9816,NDCG@50:0.7040'}
+2024-11-26 01:57:53,740 - running used time:3:51:30.773735
